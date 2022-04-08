@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane fx:controller="javab10.Controller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" >
+    <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="780.0">
+            <children>
+                <Text layoutX="335.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Person List" wrappingWidth="123.9287109375">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Text>
+                <Button layoutX="624.0" layoutY="15.0" mnemonicParsing="false"  prefHeight="28.0" prefWidth="135.0" text="Add person">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+                <TableView fx:id="tbView" layoutX="17.0" layoutY="86.0" prefHeight="514.0" prefWidth="747.0">
+                    <columns>
+                        <TableColumn fx:id="cName" prefWidth="216.0" text="Name" />
+                        <TableColumn fx:id="cEmail" prefWidth="320.0" text="Email" />
+                        <TableColumn fx:id="cAge" prefWidth="114.0" text="Age" />
+
+                    </columns>
+                </TableView>
+                <TextField fx:id="txtSearch" layoutX="17.0" layoutY="16.0" prefHeight="27.0" prefWidth="182.0" promptText="Search by name.." />
+                <Button layoutX="178.0" layoutY="16.0" mnemonicParsing="false" text="Search" />
+            </children></AnchorPane>
+    </content>
+</ScrollPane>
